@@ -1,0 +1,13 @@
+h1. InApplicationSettings
+
+h2. Overview
+
+The is an iphone settings bundle editor that you can use inside your application. 
+
+The "settings bundle":http://developer.apple.com/iphone/library/documentation/PreferenceSettings/Conceptual/SettingsApplicationSchemaReference/Introduction/Introduction.html inside your application describe a set of preferences that can be editied inside the Settings applicaiton. The settings bundle is a static plist file. This is great since it saves you a lot of coding, but it has some issues:
+* You cannot programatically redirect the users to your settings pane. So at the first launch of the application all you do is putting up an alert "Please use the Settings application to configure application.". This is less than user-friendly.
+* You cannot define any custom elements. Nor can you display dynamic information.
+
+This project helps to solve these problems by reimplementing a preferences editor, that closely resembles to the editor in settings applicaiton.
+
+
